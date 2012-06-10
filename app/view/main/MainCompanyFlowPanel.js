@@ -5,5 +5,9 @@
 Ext.define('AM.view.main.MainCompanyFlowPanel', {
     title: 'Flow',
     extend: 'Ext.Panel',
-    alias : 'widget.mainCompanyFlowPanel'
+    alias: 'widget.mainCompanyFlowPanel',
+    items:[{
+          xtype: 'companyGrid'
+        }],
+    requires  : ['AM.view.company.CompanyGrid']    
 });
